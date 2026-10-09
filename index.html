@@ -14,6 +14,62 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
   <style>
+    
+/* Anime neon glow */
+.avatar-wrap {
+  box-shadow: 0 0 18px #55c8ff,
+              0 0 38px rgba(85, 200, 255, .65);
+  animation: avatarGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes avatarGlow {
+  from { box-shadow: 0 0 12px #55c8ff; }
+  to {
+    box-shadow: 0 0 28px #55c8ff,
+                0 0 48px rgba(85, 200, 255, .5);
+  }
+}
+
+.card {
+  border-color: rgba(133, 239, 255, .55);
+  box-shadow: 0 0 28px rgba(85, 200, 255, .18);
+}
+
+.social {
+  backdrop-filter: blur(8px);
+}
+
+.social:hover {
+  box-shadow: 0 0 20px #55c8ff;
+}
+
+/* Sparkle decorations */
+.sparkle {
+  position: fixed;
+  z-index: 5;
+  pointer-events: none;
+  color: #b8f6ff;
+  text-shadow: 0 0 12px #55c8ff;
+  animation: sparkleFloat 4s ease-in-out infinite;
+}
+
+@keyframes sparkleFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: .35;
+  }
+  50% {
+    transform: translateY(-22px) rotate(25deg);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .avatar-wrap, .sparkle {
+    animation: none;
+  }
+}
+
     :root {
       --bg: #071426;
       --panel: rgba(14, 34, 59, .78);
