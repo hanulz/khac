@@ -17,18 +17,18 @@ html {
   background: var(--blue);
   -webkit-text-size-adjust: 100%;
 }
-
 body {
   margin: 0;
   min-height: 100vh;
   overflow-x: clip;
   font-family: "Poppins", Arial, sans-serif;
   color: var(--white);
+
   background-color: var(--blue);
   background-image:
     linear-gradient(
-      rgba(29, 111, 196, 0.16),
-      rgba(15, 80, 157, 0.28)
+      rgba(29, 111, 196, 0.08),
+      rgba(15, 80, 157, 0.12)
     ),
     url("./background.png");
   background-repeat: no-repeat;
@@ -36,7 +36,6 @@ body {
   background-size: cover;
   background-attachment: scroll;
 }
-
 button,
 a {
   touch-action: manipulation;
