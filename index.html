@@ -355,10 +355,7 @@ body.light::before {
 
 <header class="topbar">
   <div class="logo">2009</div>
-  <button class="theme-toggle" id="themeBtn" type="button">
-    <i class="fa-solid fa-sun"></i> / <i class="fa-solid fa-moon"></i>
-  </button>
-</header>
+  </header>
 
 <main class="page">
   <section class="profile">
@@ -420,14 +417,9 @@ body.light::before {
 </footer>
 
 <script>
-const themeBtn = document.getElementById('themeBtn');
 const music = document.getElementById('music');
 const playBtn = document.getElementById('playBtn');
 const musicTitle = document.getElementById('musicTitle');
-
-themeBtn.addEventListener('click', () => {
-  document.body.classList.toggle('light');
-});
 
 playBtn.addEventListener('click', async () => {
   if (music.paused) {
